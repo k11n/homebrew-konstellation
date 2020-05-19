@@ -2,7 +2,7 @@ class Konstellation < Formula
   desc "Manages Apps on Kubernetes"
   homepage "https://github.com/k11n/konstellation"
   url "https://github.com/k11n/konstellation.git",
-    :revision => "20336507c72e03ba66fc4936373e40a1d83c7f5f"
+    :tag => "v0.1.0"
   head "https://github.com/k11n/konstellation.git"
   version "0.1.0"
 
@@ -21,7 +21,6 @@ class Konstellation < Formula
 
     cd kon_dir do
       system "go", "get", "github.com/GeertJohan/go.rice/rice"
-
       system "./build.sh"
       bin.install "kon"
     end
