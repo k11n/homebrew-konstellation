@@ -2,9 +2,9 @@ class Konstellation < Formula
   desc "Manages Apps on Kubernetes"
   homepage "https://github.com/k11n/konstellation"
   url "https://github.com/k11n/konstellation.git",
-    :tag => "v0.1.11"
+    :tag => "v0.2.0"
   head "https://github.com/k11n/konstellation.git"
-  version "0.1.11"
+  version "0.2.0"
 
   depends_on "go" => :build
   depends_on "kubernetes-cli"
